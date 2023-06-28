@@ -1,0 +1,356 @@
+#wrapper #header .headTop {
+  background: #eaeaea;
+  height: 30px;
+}
+#wrapper #header .headTop .headTopMain {
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+#wrapper #header .headTop .headTopMain::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #header .headTop .headTopMain .left {
+  float: left;
+}
+#wrapper #header .headTop .headTopMain .left h5 {
+  float: left;
+  margin-right: 5px;
+}
+#wrapper #header .headTop .headTopMain .left p {
+  float: left;
+}
+#wrapper #header .headTop .headTopMain .left p a:first-child {
+  border-right: 1px solid #b3aeae;
+  margin-right: 0px;
+  padding-right: 5px;
+}
+#wrapper #header .headTop .headTopMain .right {
+  float: right;
+}
+#wrapper #header .headTop .headTopMain .right nav {
+  font-size: 0px;
+}
+#wrapper #header .headTop .headTopMain .right nav a {
+  font-size: 12px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #b3aeae;
+}
+#wrapper #header .headTop .headTopMain .right nav a:last-child {
+  border: none;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+#wrapper #header .headBottom .headBottomMain {
+  width: 1200px;
+  margin: 0 auto;
+}
+#wrapper #header .headBottom .headBottomMain::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #header .headBottom .headBottomMain .logo a {
+  float: left;
+}
+#wrapper #header .headBottom .headBottomMain .logo a img {
+  width: 175px;
+  height: 56px;
+  margin: 25px 45px;
+}
+#wrapper #header .headBottom .headBottomMain .search {
+  float: right;
+  margin-top: 35px;
+}
+#wrapper #header .headBottom .headBottomMain .search input:first-child {
+  box-sizing: border-box;
+  width: 490px;
+  height: 32px;
+  padding: 0px 4px;
+  border: 3px solid #ea4a36;
+  float: left;
+}
+#wrapper #header .headBottom .headBottomMain .search input:last-child {
+  width: 68px;
+  height: 32px;
+  color: #fff;
+  background: #ea4a36;
+  border: none;
+}
+#wrapper #header .headBottom .headBottomMain .search input::-webkit-input-placeholder {
+  color: yellowgreen;
+}
+#wrapper #navWrap {
+  border-bottom: 2px solid #e1251b;
+}
+#wrapper #navWrap .navWrapMain {
+  width: 1200px;
+  margin: 0 auto;
+}
+#wrapper #navWrap .navWrapMain::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #navWrap .navWrapMain a {
+  margin: 0 22px;
+  font-size: 16px;
+  color: #333;
+  float: left;
+  line-height: 50px;
+}
+#wrapper #navWrap .navWrapMain a:first-child {
+  width: 210px;
+  height: 50px;
+  background: #e1251b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+}
+#wrapper #content .contentMain {
+  width: 1200px;
+  margin: 15px auto 0 auto;
+}
+#wrapper #content .contentMain .navPath {
+  padding: 9px 15px 9px 0;
+  font-size: 0px;
+}
+#wrapper #content .contentMain .navPath a {
+  font-size: 12px;
+}
+#wrapper #content .contentMain .navPath i {
+  font-size: 12px;
+  padding: 0 5px;
+}
+#wrapper #content .contentMain #center {
+  margin: 5px 0 15px;
+}
+#wrapper #content .contentMain #center::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .contentMain #center #left {
+  width: 400px;
+  float: left;
+}
+#wrapper #content .contentMain #center #left #leftTop {
+  position: relative;
+  width: 400px;
+}
+#wrapper #content .contentMain #center #left #leftTop #smallPic {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #dfdfdf;
+  position: relative;
+}
+#wrapper #content .contentMain #center #left #leftTop #smallPic .mask {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#wrapper #content .contentMain #center #left #leftTop #bigPic {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ddd;
+  left: 420px;
+  top: 0px;
+  overflow: hidden;
+}
+#wrapper #content .contentMain #center #left #leftTop #bigPic img {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#wrapper #content .contentMain #center #left #leftBottom {
+  width: 400px;
+  margin-top: 5px;
+}
+#wrapper #content .contentMain #center #left #leftBottom a {
+  width: 10px;
+  height: 54px;
+  border: 1px solid #ccc;
+  background: #ebebeb;
+  text-align: center;
+  line-height: 54px;
+  float: left;
+}
+#wrapper #content .contentMain #center #left #leftBottom a:first-child {
+  margin-right: 4px;
+}
+#wrapper #content .contentMain #center #left #leftBottom #piclist {
+  width: 372px;
+  height: 56px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+#wrapper #content .contentMain #center #left #leftBottom #piclist ul {
+  white-space: nowrap;
+  position: absolute;
+  left: 0px;
+  transition: 0.5s;
+}
+#wrapper #content .contentMain #center #left #leftBottom #piclist ul li {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin-right: 20px;
+  display: inline-block;
+}
+#wrapper #content .contentMain #center #left #leftBottom #piclist ul li img {
+  width: 50px;
+  height: 50px;
+}
+#wrapper #content .contentMain #center .right {
+  width: 700px;
+  float: right;
+}
+#wrapper #content .contentMain #center .right .rightTop h3 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 15px;
+}
+#wrapper #content .contentMain #center .right .rightTop > p {
+  color: #e12228;
+  margin-top: 15px;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap {
+  margin-top: 10px;
+  line-height: 28px;
+  background: #fee9ec;
+  padding: 7px;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceTop::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceTop > span {
+  margin-right: 15px;
+  float: left;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceTop .price {
+  float: left;
+  color: #cc1122;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceTop .price > span {
+  font-size: 16px;
+  float: left;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceTop .price p {
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceTop .price i {
+  font-size: 12px;
+  color: #cc1122;
+  float: left;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceTop > p {
+  float: right;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceBottom::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceBottom > span {
+  float: left;
+  margin-right: 15px;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceBottom p {
+  width: 520px;
+  line-height: 28px;
+  float: left;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceBottom p > span {
+  color: #999;
+}
+#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceBottom p > span:first-child {
+  background: #c81623;
+  padding: 3px;
+  color: #fff;
+}
+#wrapper #content .contentMain #center .right .rightTop .support {
+  margin-top: 10px;
+  line-height: 28px;
+}
+#wrapper #content .contentMain #center .right .rightTop .support::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .contentMain #center .right .rightTop .support > span {
+  margin-right: 15px;
+  float: left;
+}
+#wrapper #content .contentMain #center .right .rightTop .support > p {
+  float: left;
+  color: #999;
+}
+#wrapper #content .contentMain #center .right .rightTop .address {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+  line-height: 28px;
+  margin-top: 10px;
+}
+#wrapper #content .contentMain #center .right .rightTop .address::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .contentMain #center .right .rightTop .address > span {
+  margin-right: 15px;
+  float: left;
+}
+#wrapper #content .contentMain #center .right .rightTop .address > p {
+  float: left;
+  color: #999;
+}
+#wrapper #content .contentMain #center .right .rightBottom {
+  margin-top: 10px;
+  line-height: 28px;
+}
+#wrapper #content .contentMain #center .right .rightBottom .chooseWrap dl {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+#wrapper #content .contentMain #center .right .rightBottom .chooseWrap dl::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .contentMain #center .right .rightBottom .chooseWrap dl dt {
+  margin-right: 15px;
+  float: left;
+}
+#wrapper #content .contentMain #center .right .rightBottom .chooseWrap dl dd {
+  float: left;
+  margin-right: 5px;
+  color: #666;
+  line-height: 24px;
+  padding: 2px 14px;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+#wrapper #content .contentMain #center .right .rightBottom .chooseWrap dl dd:first-of-type {
+  color: red;
+}

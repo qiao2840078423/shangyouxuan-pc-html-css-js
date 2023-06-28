@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尚优选</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- 最外层的包裹元素--操作DOM -->
+    <div id="wrapper">
+        <!-- 头部开始 -->
+        <header id="header">
+            <!-- 上面部分 -->
+            <div class="headTop">
+                <!-- 版心元素 -->
+                <div class="headTopMain">
+                    <!-- 左侧 -->
+                    <div class="left">
+                        <h5>欢迎来到尚优选！请</h5>
+                        <p>
+                            <a href="javascript:;">登录</a>
+                            <a href="javascript:;">注册</a>
+                        </p>
+                    </div>
+                    <!-- 右侧 -->
+                    <div class="right">
+                        <nav>
+                            <a href="javascript:;">我的订单</a>
+                            <a href="javascript:;">我的购物车</a>
+                            <a href="javascript:;">我的尚优选</a>
+                            <a href="javascript:;">尚优选会员</a>
+                            <a href="javascript:;">企业采购</a>
+                            <a href="javascript:;">关注尚优选</a>
+                            <a href="javascript:;">合作招商</a>
+                            <a href="javascript:;">商家后台</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- 下面部分 -->
+            <div class="headBottom">
+                <!-- 版心元素 -->
+                <div class="headBottomMain">
+                    <!-- logo -->
+                    <h1 class="logo">
+                        <a href="javascript:;">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <!-- 搜索框 -->
+                    <div class="search">
+                        <input type="text" placeholder="请输入搜索内容">
+                        <input type="submit" value="搜索">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 头部结束 -->
+
+        <!-- 分类导航开始 -->
+        <div id="navWrap">
+            <div class="navWrapMain">
+                <a href="javascript:;">全部商品分类</a>
+                <a href="javascript:;">服装城</a>
+                <a href="javascript:;">美妆馆</a>
+                <a href="javascript:;">尚优选超市</a>
+                <a href="javascript:;">全球购</a>
+                <a href="javascript:;">闪购</a>
+                <a href="javascript:;">团购</a>
+                <a href="javascript:;">有趣</a>
+                <a href="javascript:;">秒杀</a>
+            </div>
+        </div>
+        <!-- 分类导航结束 -->
+
+        <!-- 内容区域开始 -->
+        <div id="content">
+            <!-- 版心元素 -->
+            <div class="contentMain">
+                <!-- 路径导航开始 -->
+                <div id="navPath">
+                    <!-- <a href="javascript:;">手机、数码、通讯</a>
+                    <i>/</i>
+                    <a href="javascript:;">手机</a>
+                    <i>/</i>
+                    <a href="javascript:;">Apple苹果</a>
+                    <i>/</i>
+                    <a>iphone 6S系</a> -->
+                </div>
+                <!-- 路径导航结束 -->
+
+                <!-- 中间区域开始 -->
+                <div id="center">
+                    <!-- 左侧放大镜开始 -->
+                    <div id="left">
+                        <!-- 上边 -->
+                        <div id="leftTop">
+                            <!-- 小图框 -->
+                            <div id="smallPic">
+                                <!-- 小图片 -->
+                                <img src="images/s1.png" alt="">
+                                <!-- 蒙版元素 -->
+                            </div>
+                            <!-- 大图框 -->
+                        </div>
+                        <!-- 下边 -->
+                        <div id="leftBottom">
+                            <a href="javascript:;" class="prev">
+                                < </a>
+                                    <div id="piclist">
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                    <a href="javascript:;" class="next"> > </a>
+                        </div>
+                    </div>
+                    <!-- 左侧放大镜结束 -->
+                    <!-- 右侧详情区域开始 -->
+                    <div class="right">
+                        <!--商品详情数据结构开始-->
+                        <div class="rightTop">
+                            <!-- <h3>Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机bbb123</h3>
+                            <p>推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返</p>
+                            <div class="priceWrap">
+                                <div class="priceTop">
+                                    <span>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</span>
+                                    <div class="price">
+                                        <span>￥</span>
+                                        <p>5299</p>
+                                        <i>降价通知</i>
+                                    </div>
+                                    <p>
+                                        <span>累计评价</span>
+                                        <span>670000</span>
+                                    </p>
+                                </div>
+                                <div class="priceBottom">
+                                    <span>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</span>
+                                    <p>
+                                        <span>加价购</span>
+                                        <span>满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="support">
+                                <span>支&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;持</span>
+                                <p>以旧换新，闲置手机回收 4G套餐超值抢 礼品购</p>
+                            </div>
+                            <div class="address">
+                                <span>配&nbsp;送&nbsp;至</span>
+                                <p>广东省 深圳市 宝安区</p>
+                            </div> -->
+                        </div>
+                        <!--商品详情数据结构结束-->
+                        <!--商品参数的结构布局开始-->
+                        <div class="rightBottom">
+                            <!--选择之后结果的区域开始-->
+                            <!--选择之后结果的区域结束-->
+
+                            <!--商品参数的选择区域开始-->
+                            <div class="chooseWrap">
+                                <!-- <dl>
+                                    <dt>选择颜色</dt>
+                                    <dd>金色</dd>
+                                    <dd>银色</dd>
+                                    <dd>黑色</dd>
+                                </dl>
+                                <dl>
+                                    <dt>内存容量</dt>
+                                    <dd>16G</dd>
+                                    <dd>64G</dd>
+                                    <dd>128G</dd>
+                                    <dd>256G</dd>
+                                </dl>
+                                <dl>
+                                    <dt>选择版本</dt>
+                                    <dd>公开版</dd>
+                                    <dd>移动版</dd>
+                                </dl>
+                                <dl>
+                                    <dt>购买方式</dt>
+                                    <dd>官方标配</dd>
+                                    <dd>优惠移动版</dd>
+                                    <dd>电信优惠版</dd>
+                                </dl> -->
+                            </div>
+                            <!--商品参数的选择区域结束-->
+
+                            <!--加入购物车以及数量区域开始-->
+                            <!--加入购物车以及数量区域结束-->
+                        </div>
+                        <!--商品参数的结构布局结束-->
+                    </div>
+                    <!-- 右侧详情区域结束 -->
+                </div>
+                <!-- 中间区域结束 -->
+            </div>
+        </div>
+        <!-- 内容区域结束 -->
+    </div>
+</body>
+
+</html>
