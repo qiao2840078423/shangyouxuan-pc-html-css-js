@@ -11,6 +11,7 @@ window.onload = function () {
     thumbnailLeftRightClick();
     rightTopData();
     rightBottomData();
+    clickddBind();
 
     // 路径导航的数据渲染
     function navPathDataBind() {
@@ -348,5 +349,44 @@ window.onload = function () {
             //8、让chooseWrap追加dl
             chooseWrap.appendChild(dlNode);
         }
+    }
+
+    // 点击商品参数之后的颜色排他效果
+    function clickddBind() {
+        const chooseWrap = document.querySelector("#wrapper #content .contentMain #center .right .rightBottom .chooseWrap")
+        const choose = document.querySelector("#wrapper #content .contentMain #center .right .rightBottom .choose")
+        chooseWrap.addEventListener("click", (e) => {
+            // console.log(e);
+            // console.log(e.target);
+
+            if (e.target.nodeName == "DD") {
+                e.target.parentNode.querySelectorAll("dd").forEach((d) => {
+                    d.style.color = "#666"
+                })
+                e.target.style.color = "red"
+
+                // 动态产生mark标记元素
+                div = document.createElement("div")
+                div.className = "mark"
+                div.innerHTML = `${e.target.innerText}<a>X</a>`
+                choose.appendChild(div)
+
+                // 点击mark标记元素删除
+                // choose.addEventListener("click", (event) => {
+                //     // console.log(event);
+                //     if (event.target.className == "mark") {
+                //         event.target.parentNode.removeChild(event.target)
+                //         // event.target.remove()
+                //     }
+                // })
+
+                choose.onclick = function (event) {
+                    if (event.target.className == "mark") {
+                        event.target.parentNode.removeChild(event.target)
+                        // event.target.remove()
+                    }
+                }
+            }
+        })
     }
 }
