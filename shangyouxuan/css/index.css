@@ -373,3 +373,137 @@
 #wrapper #content .contentMain #center .right .rightBottom .chooseWrap dl dd:first-of-type {
   color: red;
 }
+#wrapper #content .contentMain #center .right .rightBottom .addCart::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .contentMain #center .right .rightBottom .addCart .count {
+  float: left;
+  width: 55px;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+}
+#wrapper #content .contentMain #center .right .rightBottom .addCart .count input {
+  width: 38px;
+  height: 37px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+#wrapper #content .contentMain #center .right .rightBottom .addCart .count a {
+  width: 15px;
+  height: 18px;
+  color: #666;
+  background: #f1f1f1;
+  position: absolute;
+  right: 1px;
+  line-height: 18px;
+  border: 1px solid #ddd;
+}
+#wrapper #content .contentMain #center .right .rightBottom .addCart .count a:first-child {
+  top: 0px;
+}
+#wrapper #content .contentMain #center .right .rightBottom .addCart .count a:last-child {
+  top: 19px;
+  border-top: 0px;
+}
+#wrapper #content .contentMain #center .right .rightBottom .addCart button {
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 36px;
+  font-size: 16px;
+  background: #e1251b;
+  color: #fff;
+  border: none;
+}
+#wrapper .rightAside {
+  width: 300px;
+  height: 100%;
+  background: #7a6e6e;
+  transition: 0.5s;
+  position: fixed;
+  top: 0px;
+}
+#wrapper .rightAside.asideClose {
+  right: -294px;
+}
+#wrapper .rightAside.asideOpen {
+  right: 0px;
+}
+#wrapper .rightAside .btns {
+  width: 35px;
+  height: 35px;
+  background: #7a6e6e;
+  border-radius: 5px 0 0 5px;
+  left: -29px;
+  background-size: 35px 35px;
+  position: absolute;
+}
+#wrapper .rightAside .btns.btnsClose {
+  background-image: url('../images/list.png');
+}
+#wrapper .rightAside .btns.btnsOpen {
+  background-image: url('../images/cross.png');
+}
+#wrapper .rightAside .content {
+  width: 294px;
+  background: bisque;
+  position: absolute;
+  left: 6px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper .rightAside .content img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+#wrapper .rightAside .content .love {
+  font-family: "kaiti";
+  font-size: 33px;
+  font-weight: bold;
+}
+#wrapper .rightAside .navlist {
+  position: absolute;
+  left: -29px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#wrapper .rightAside .navlist li {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+#wrapper .rightAside .navlist li p {
+  width: 35px;
+  height: 35px;
+  background: #7a6e6e;
+  background-image: url('../images/toolbars.png');
+  background-position: -87px -174px;
+  transition: 0.5s;
+}
+#wrapper .rightAside .navlist li i {
+  width: 62px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  left: 35px;
+  transition: 0.5s;
+  top: 0px;
+  background: #7a6e6e;
+}
+#wrapper .rightAside .navlist li:hover p {
+  background-color: pink;
+}
+#wrapper .rightAside .navlist li:hover i {
+  background-color: pink;
+  left: -62px;
+}

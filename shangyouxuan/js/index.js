@@ -12,6 +12,7 @@ window.onload = function () {
     rightTopData();
     rightBottomData();
     clickddBind();
+    rightAsideBind();
 
     // 路径导航的数据渲染
     function navPathDataBind() {
@@ -341,6 +342,8 @@ window.onload = function () {
                 //创建dd元素
                 const ddNode = document.createElement('dd');
                 ddNode.innerText = crumbData[i].data[j].type;
+                ddNode.setAttribute("price", crumbData[i].data[j].changePrice)
+                ddNode.setAttribute('index', i)
 
                 //让dl来追加dd
                 dlNode.appendChild(ddNode);
@@ -369,6 +372,10 @@ window.onload = function () {
                 div = document.createElement("div")
                 div.className = "mark"
                 div.innerHTML = `${e.target.innerText}<a>X</a>`
+                // console.log(e.target.index);
+                // console.log(e.target.getAttribute('index'));
+                div.setAttribute("price", e.target.getAttribute('price'))
+                div.setAttribute("index", e.target.getAttribute('index'))
                 choose.appendChild(div)
 
                 // 点击mark标记元素删除
@@ -382,11 +389,72 @@ window.onload = function () {
 
                 choose.onclick = function (event) {
                     if (event.target.className == "mark") {
+                        const dlNodes = chooseWrap.querySelectorAll("dl")
+                        // console.log(dlNodes);
+                        dlNodes[event.target.getAttribute('index')].querySelectorAll("dd").forEach((dd) => {
+                            dd.style.color = "#666"
+                        })
+                        dlNodes[event.target.getAttribute('index')].querySelectorAll("dd")[0].style.color = "red"
                         event.target.parentNode.removeChild(event.target)
                         // event.target.remove()
+                        changePriceBind(choose);
                     }
                 }
+                changePriceBind(choose);
             }
         })
+    }
+
+    // 价格变动的函数声明
+    function changePriceBind(choose) {
+        let oldPrice = document.querySelector("#wrapper #content .contentMain #center .right .rightTop .priceWrap .priceTop .price p")
+        let price = goodData.goodsDetail.price
+        choose.querySelectorAll("div").forEach((c) => {
+            price = price + Number(c.getAttribute('price'))
+        })
+        oldPrice.innerText = price
+    }
+
+    //右边侧边栏的点击效果
+    function rightAsideBind() {
+        /**
+         * 思路：
+         * 1、先找到按钮元素，发生点击事件
+         * 2、记录一个初始的状态，在点击事件的内容进行判断,如果为关闭则展开，否则为关闭（状态取反）
+         * 3、如果为展开则设置按钮和侧边栏对应的class效果，关闭亦如此
+         */
+
+        //1、找按钮元素
+        const btns = document.querySelector('#wrapper .rightAside .btns');
+
+        //记录初始状态
+        let flag = true; //关闭
+
+        //查找侧边栏元素
+        const rightAside = document.querySelector('#wrapper .rightAside');
+
+        //2、发生点击事件
+        btns.onclick = function () {
+
+            //判断
+            if (flag) {
+                //展开
+                //  flag = false;
+
+                btns.className = "btns btnsOpen";
+
+                rightAside.className = "rightAside asideOpen";
+
+            } else {
+                //关闭
+                //  flag = true;
+                btns.className = "btns btnsClose"
+
+                rightAside.className = "rightAside asideClose";
+            }
+
+            //无论前面的if和else执行的到底是谁，最终flag的状态都是在原来基础之上进行取反
+            flag = !flag;
+        }
     }
 }
